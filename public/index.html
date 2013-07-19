@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>{{ PhoneGap Day / PDX / 2013 }}</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/one-mozilla.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+
+		<link rel="stylesheet" href="css/custom.css">
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1><img src="img/mozilla-wordmark-800px.png"></h1>
+					<h3>Phonegap Day</h3>
+					<p>July 19th, 2013</p>
+					<p><em>PDX - OR - Cascadia</em></p>
+				</section>
+        <section>
+          <h1>You are the Pioneers</h1>
+        </section>
+        <section>
+          <h3><em>"...with PhoneGap, any web developer can build an iPhone app. There are few excuses to not get started."</em></h3> 
+          <p style="text-align: right;"><em>- Brock Whitten ( @sintaxi ), 2008</em></p>
+        </section>
+        <section>
+          <h3><em>"...we thought the web should be the platform, and the web should have it's own phone."</em></h3>
+          <p style="text-align: right;"><em>- Brendan Eich, 2013</em></p>
+        </section>
+
+        <section>
+          <h2>It's been a crazy 5 years!</h2>
+          <h3><em>This whole web platform thing might really work out...</em></h3>
+        </section>
+        <section>
+          <img src="./pics/FirefoxOS.2.png"/>
+        </section>
+        <section>
+          <h2 class="jg-left">Not vaporware</h2>
+          <ul>
+            <li>phones shipping now</li>
+            <li>this year: Spain, Poland, Columbia, Brazil, ???</li>
+            <li>Firefox Marketplace is live with payments</li>
+          </ul>
+        </section>
+        <section>
+          <h2 class="jg-left">Current Status</h2>
+          <h3><a target="_blank" href="https://wiki.mozilla.org/CordovaFirefoxOS">https://wiki.mozilla.org/CordovaFirefoxOS</a></h3>
+        </section>
+        <section>
+          <h2 class="jg-left">Open Web Apps</h2>
+          <h3><em>~ Not just another build target</em></h3>
+        </section>
+        <section>
+          <h2 class="jg-left">Open Web Apps</h2>
+          <ul>
+            <li>Firefox OS phones</li>
+            <li>Android Web Apps</li>
+            <li>Device Api Standardization</li>
+            <li>Web App Marketplace with payments</li>
+          </ul>
+        </section>
+        <section>
+          <h2 class="jg-left">Web App Developer Tools</h2>
+          <ul>
+            <li>Firefox OS Simulator, Firefox Developer Tools</li>
+            <li>Coming soon: powerful on-device tools, deep extensibility</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="jg-left">Check it out</h2>
+          <ul>
+            <li>Firefox Aurora</li>
+            <li>Firefox OS Simulator</li>
+            <li><a target="_blank" href="https://github.com/zalun/cordova-firefoxos-take-one">https://github.com/zalun/cordova-firefoxos-take-one</a></li>
+          </ul>
+        </section>
+
+        <section>
+          <h1>That's it.</h1>
+          <h3>Questions?</h3>
+        </section>
+
+        <section>
+          <h1>Thanks</h1>
+          <br>
+          <ul style="list-style: none;">
+            <li>Jeff Griffiths ( @canuckistani )</li>
+            <li><a target="_blank" href="https://hacks.mozilla.org/">hacks.mozilla.org</a></li>
+            <li>irc.mozilla.org/#devtools</li>
+            <li>Slides => <a target="_blank" href="http://pgday-fxos.harpapp.io/">http://pgday-fxos.harpapp.io/</a></li>
+          </ul>
+        </section>
+
+<!-- <section>                  
+  <h3 class="jg-left">Some code...</h3>
+
+<pre><code class="javascript">(function(win) {
+  return console.log(win === window);
+})(window);
+</code></pre>
+</section> -->
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				// transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/none
+				transition: 'linear',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					// { src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					// { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					// { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>

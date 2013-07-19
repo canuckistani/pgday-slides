@@ -1,0 +1,25 @@
+code.javascript {
+    max-height: 700px;
+}
+
+.jg-left {
+    text-align: left;
+}
+
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4 {
+  word-break: keep-all;
+  -moz-hyphens: none;
+  line-height 1.1em;
+}
+
+em {
+  word-break: normal;
+  -moz-hyphens: none;
+}
+
+a.roll:hover {
+  transition: none;
+}
